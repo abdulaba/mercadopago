@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     require 'mercadopago'
-    sdk = Mercadopago::SDK.new('')
+    sdk = Mercadopago::SDK.new('Agregar tu key de mercadopago')
     # Crea un objeto de preferencia
     preference_data = {
       items: [
